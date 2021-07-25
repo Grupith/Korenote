@@ -16,6 +16,18 @@
   font-family: "Heebo", sans-serif;
 }
 
+.dashboard {
+  display: flex;
+}
+
+.blockview {
+  width: 65%;
+  margin: 4rem;
+}
+
+.block {
+}
+
 .sidebar {
   border-right: 1px solid #4e4b4d;
   width: 13.5rem;
@@ -27,8 +39,7 @@
 }
 
 .sidebar input {
-  margin-right: 1rem;
-  margin-left: 1rem;
+  width: 11rem;
   margin-top: 1.5rem;
   background-color: transparent;
   border: 1px solid #4e4b4d;
@@ -38,14 +49,20 @@
   outline: none;
   color: #efdab9;
   transition: all 0.5s ease;
+  margin-bottom: 10px;
 }
 
 .sidebar input:focus {
-  transform: translateY(3px);
+  transform: translateY(5px);
 }
 
 .sidebar span {
   font-weight: 500;
+}
+
+.sidebar form {
+  display: flex;
+  justify-content: center;
 }
 
 .title {
@@ -57,19 +74,26 @@
 
 .notebooks {
   color: #efdab9;
-  margin-left: 1rem;
-  margin-top: 1rem;
+  margin-left: 1.2rem;
+  margin-right: 1rem;
+  margin-top: 5px;
 }
 
 .notebookWrapper {
   display: flex;
   align-items: center;
-  margin: 5px;
+  margin: 1px;
+  padding: 5px;
   font-weight: 400;
   justify-content: flex-start;
+  border-radius: 5px;
+}
+
+.notebookWrapper:hover {
+  background-color: #efdab913;
+  cursor: pointer;
 }
 
 .bookIcon {
-  margin-right: 5px;
-  cursor: pointer;
+  margin-right: 6px;
 }
