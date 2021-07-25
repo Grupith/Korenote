@@ -1,7 +1,8 @@
 import React, {useState, useContext, useEffect} from 'react';
-import { logOut } from '../services/firebase';
+// import { logOut } from '../services/firebase';
 import { UserContext } from '../providers/UserProvider';
 import { Redirect } from 'react-router-dom';
+import SideBar from './Sidebar';
 
 const Dashboard = () => {
     const user = useContext(UserContext);
@@ -17,13 +18,17 @@ const Dashboard = () => {
         return <Redirect to={redirect} />
     }
 
- 
+    /* const handleLogOut = () => {
+        logOut();
+        // Simple bandaid fix to the bug where I cant setRedirect('/') 
+        window.location.reload(false);
+    }
+    */ 
+   
 
     return (
         <div>
-            <h1> This is the Dashboard</h1>
-            <h2>Current user: {user && user.email}</h2>
-            <button onClick={logOut}>Logout of Korenote</button>
+            <SideBar />
         </div>
     )
 }

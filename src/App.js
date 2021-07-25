@@ -11,7 +11,6 @@ function App() {
     <UserProvider>
       <div className="App">
         <Router>
-          <h1>Hello Korenote</h1>
           <Switch>
             <Route exact path='/' component={Login} />
             <Route path='/dashboard' component={Dashboard} />
