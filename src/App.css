@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.App {
+  text-align: center;
+  background-color: #343233;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: fixed;
+  color: #efdab9;
+  font-family: 'Heebo', sans-serif;
+}
+
+.App h1 {
+  font-size: 2.3rem;
+  font-weight: 200;
+}
